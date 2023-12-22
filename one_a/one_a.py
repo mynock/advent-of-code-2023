@@ -30,15 +30,11 @@ def numbers_from_string(str):
 
 
 
-
-
 def main():
     total = 0
     # read in lines of file and loop through them
     with open("./inputs/1a.txt", 'r') as file:
         for line in file:
-            print(line)
-            print(numbers_from_string(line))
             total += numbers_from_string(line.strip())
 
     return total
